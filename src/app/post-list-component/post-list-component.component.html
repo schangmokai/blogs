@@ -1,0 +1,25 @@
+
+
+    <div class="list-group" >
+        <div class="list-group-item-success mondiv" *ngIf="loveIts>0">
+              <h2 class="monh2">{{title}}  <em style="float: right;">{{created_at | date: 'short'}}</em></h2> 
+              <p  class="monp">{{content}}</p>
+              <button class="button btn-success monbouton" (click)="updateLove()">love it!</button>
+              <button class="button btn-danger monbouton" (click)="updateDontLove()">Don't love it!</button>
+        </div>
+        <div class="list-group-item-danger mondiv" *ngIf="loveIts<0">
+            <h2 class="monh2">{{title}}  <em style="float: right;">{{created_at | date: 'short'}}</em></h2> 
+            <p  class="monp">{{content}}</p>
+            <button class="button btn-success monbouton" (click)="updateLove()">love it!</button>
+            <button class="button btn-danger monbouton" (click)="updateDontLove()">Don't love it!</button>
+      
+        </div>
+        <div class="list-group-item mondiv" *ngIf="loveIts==0">
+            <h2 class="monh2">{{title}}  <em style="float: right;">{{created_at | date: 'short'}}</em></h2> 
+            <p  class="monp">{{content}}</p>
+            <button class="button btn-success monbouton" (click)="updateLove()">love it!</button>
+            <button class="button btn-danger monbouton" (click)="updateDontLove()">Don't love it!</button>
+        </div>
+    </div>
+
+

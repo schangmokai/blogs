@@ -1,0 +1,18 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+     {{ title }}!
+  </h1>
+</div>
+
+<div class="container well">
+   <h1>Posts</h1>
+    <app-post-list-component *ngFor="let element of listesPosts" 
+                         [title]="element.title" 
+                         [content]="element.content" 
+                         [loveIts]="element.loveIts"         
+                         [created_at]="element.created_at">  </app-post-list-component>
+
+</div>
+
+

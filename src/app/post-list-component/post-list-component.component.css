@@ -1,0 +1,23 @@
+.monh2{
+    padding-left: 5px; 
+    padding-right: 5px; 
+    padding-top: 5px; 
+    padding-bottom:5px; 
+}
+
+.monp{
+
+    padding-left: 5px; 
+    padding-right: 5px;
+}
+
+.monbouton{
+    margin-left: 10px;
+    margin-bottom: 10px;
+    border-radius: 1%;
+}
+
+.mondiv{
+    border-radius: 1%;
+    margin-right: 3%;
+}
